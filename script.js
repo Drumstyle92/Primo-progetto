@@ -21,6 +21,14 @@ function meanAge () {
 let Giovanni = new Student ("Giovanni","Tirone",29,"Sondrio");
 Study_group["Giovanni"]= Giovanni;
 
+
 console.log("Hello!!!!");
 
 console.log("The mean age is:"+ meanAge());
+
+let Dino = new Student ("Dino","Petrucci",30, "Termoli");
+Study_group["Dino"]= Dino;
+console.log(meanAge());
+
+
+
