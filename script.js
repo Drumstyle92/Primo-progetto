@@ -8,17 +8,22 @@ function Student (name,surname,age,city) {
 }
 
 function meanAge () {
-    let meanAgeValue = 0;
+    
     let sumAges = 0;
     let studentsNumber = 0;
     for(let student in Study_group) {
         studentsNumber +=1;
-        sumAges += Study_group[student][age];
-        meanAgeValue = sumAges/studentsNumber; 
+        sumAges += Study_group[student]["age"];
+        
+        
+    
     }
-    return meanAgeValue; 
+         
+    return sumAges / studentsNumber;
+    
 }
 
 let Giovanni = new Student ("Giovanni","Tirone",29,"Sondrio");
+Study_group["Giovanni"]= Giovanni;
 
-Study_group["Giovanni"] = Giovanni;
+console.log(meanAge());
